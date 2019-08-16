@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   spec.version      = "0.0.1"
   spec.summary      = "An easy to integrate and use api cache library."
   spec.description  = "This library provides an async image, JSON and Data downloader with cache support. For convenience, Extension for UIImageView has been added. Download Data asynchronously, cache response in memory, set max cache size and more with KBCachier!"
-  spec.homepage     = "http://github.com/keshavx11/KBCachier"
+  spec.homepage     = "https://github.com/keshavx11/KBCachier"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -62,7 +62,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "http://github.com/keshavx11/KBCachier.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/keshavx11/KBCachier.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
