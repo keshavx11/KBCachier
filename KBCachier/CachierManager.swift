@@ -16,6 +16,11 @@ class CachierManager: NSObject {
             self.memoryCache.memoryCapacity = maxCacheSize
         }
     }
+    public var timeOutForRequest: TimeInterval = 30 {
+        didSet {
+            self.urlSession.configuration.timeoutIntervalForRequest = timeOutForRequest
+        }
+    }
     public var dispatchQueue = DispatchQueue.global(qos: .userInitiated)
     
     // To run only 10 api call tasks at a time
@@ -28,6 +33,7 @@ class CachierManager: NSObject {
     
     lazy var urlSession: URLSession = {
         let config = URLSessionConfiguration.default
+        config.timeoutIntervalForRequest = 10
         config.requestCachePolicy = .reloadIgnoringLocalCacheData
         config.urlCache = nil
         let session = URLSession(configuration: config)

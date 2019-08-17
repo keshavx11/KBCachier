@@ -31,6 +31,13 @@ public class Cachier: NSObject {
         }
     }
     
+    /* Time out to complete the request. Defaults to 30 seconds */
+    public var timeOutForRequest: TimeInterval = 30 {
+        didSet {
+            self.manager.timeOutForRequest = timeOutForRequest
+        }
+    }
+    
     // Thread for making api calls. Can be customized by the developer. Defaults to global
     public var dispatchQueue = DispatchQueue.global(qos: .userInitiated) {
         didSet {
