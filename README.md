@@ -13,6 +13,7 @@ This library provides an async image, JSON and Data downloader with cache suppor
 - [x] Cache Image, JSON or any other Data from APIs
 - [x] Set maximum cache size
 - [x] Parellel requests
+- [x] Choose thread for api calls
 - [x] Customizable
 
 ## Requirements
