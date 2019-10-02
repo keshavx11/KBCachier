@@ -20,6 +20,7 @@ This library provides an async image, JSON and Data downloader with cache suppor
 
 - iOS 10.0+
 - Xcode 10.0
+- Swift 5+
 
 ## Installation
 
